@@ -76,7 +76,7 @@ function SessionHandler(db) {
                     // console.log('Error: attempt to login with invalid user: %s', userName.replace(/(\r\n|\r|\n)/g, '_'));
 
                     return res.render("login", {
-                        userName: userName,
+                        userName: userName,  // This is bad
                         password: "",
                         loginError: invalidUserNameErrorMessage
                         //Fix for A2-2 Broken Auth - Uses identical error for both username, password error
